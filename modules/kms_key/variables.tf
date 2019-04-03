@@ -1,4 +1,4 @@
 variable "alias_name" {
-  type = "string"
+  type        = "string"
   description = "The alias for the main key"
 }
