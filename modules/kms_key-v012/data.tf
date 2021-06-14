@@ -13,7 +13,7 @@ data "aws_iam_policy_document" "policy" {
 
     principals {
       type        = "AWS"
-      identifiers = formatlist("arn:aws:iam::%s:root", local.accounts_with_permissions)
+      identifiers = formatlist("arn:aws:iam::%v:root", local.accounts_with_permissions)
     }
   }
 }
